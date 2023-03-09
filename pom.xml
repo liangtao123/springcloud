@@ -11,6 +11,8 @@
     <modules>
         <module>eurekaServer</module>
         <module>eurekaClient</module>
+        <module>restTemplate</module>
+        <module>eurekaConsumer</module>
     </modules>
 
     <properties>
@@ -59,6 +61,13 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.10</version>
+        </dependency>
+
+<!--        添加fastjson依赖-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.83</version>
         </dependency>
     </dependencies>
 
