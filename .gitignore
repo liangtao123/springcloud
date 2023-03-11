@@ -39,3 +39,7 @@ build/
 /eurekaServer/src/test/
 /.idea/
 /.idea/
+/eurekaClient/src/test/
+/restTemplate/src/test/
+/eurekaConsumer/src/test/
+/zuul/src/test/

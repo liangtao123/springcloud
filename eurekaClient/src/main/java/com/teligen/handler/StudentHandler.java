@@ -3,6 +3,7 @@ package com.teligen.handler;
 import com.teligen.entity.Student;
 import com.teligen.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
@@ -13,6 +14,9 @@ public class StudentHandler {
 
     @Autowired
     private StudentRepository studentRepository;
+
+    @Value("${server.port}")
+    private String index;
 
     @GetMapping("/findAll")
     public Collection<Student>findAll(){
@@ -39,6 +43,11 @@ public class StudentHandler {
     @DeleteMapping("/delete/{id}")
     public void deleteById(@PathVariable("id")long id){
         studentRepository.deleteById(id);
+    }
+
+    @GetMapping("/index")
+    public String index(){
+        return "当前的服务端口:"+this.index;
     }
 
 }

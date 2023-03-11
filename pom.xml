@@ -13,6 +13,7 @@
         <module>eurekaClient</module>
         <module>restTemplate</module>
         <module>eurekaConsumer</module>
+        <module>zuul</module>
     </modules>
 
     <properties>
