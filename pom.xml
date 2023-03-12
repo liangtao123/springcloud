@@ -16,6 +16,7 @@
         <module>zuul</module>
         <module>ribbonModule</module>
         <module>feignModule</module>
+        <module>hystrix</module>
     </modules>
 
     <properties>
